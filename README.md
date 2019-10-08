@@ -73,7 +73,7 @@ higher up make use of the MVC layers lower down the pyramid, testing at higher
 layers will also "exercise" or "flex" the layers lower down. Consider that if
 you want to test a user's perspective by browsing to a page and performing some
 action (say, subscribing to a newsletter) you're going to test views ("Is there
-a field for adding my email address?") )_explicitly_, but _also_ implicitly test
+a field for adding my email address?") _explicitly_, but _also_ implicitly test
 the Controller ("Did my submit button click POST to `subscribers#create`") as
 well as the Model ("Is the number of `Subscriber` instances 1 larger than it was
 _before_ I made this request?")
