@@ -73,7 +73,7 @@ higher up make use of the MVC layers lower down the pyramid, testing at higher
 layers will also "exercise" or "flex" the layers lower down. Consider that if
 you want to test a user's perspective by browsing to a page and performing some
 action (say, subscribing to a newsletter) you're going to test views ("Is there
-a field for adding my email address?") )_explicitly_, but _also_ implicitly test
+a field for adding my email address?") _explicitly_, but _also_ implicitly test
 the Controller ("Did my submit button click POST to `subscribers#create`") as
 well as the Model ("Is the number of `Subscriber` instances 1 larger than it was
 _before_ I made this request?")
@@ -490,7 +490,7 @@ In response to Capybara's submission of the greeting form, we can `expect` the
 `page` to `have_text` `"Hi Avi, nice to meet you!"`. Our test user filled in
 their `user_name` as 'Avi', and the resulting greeting should mention that.
 `have_text` is another really friendly and semantic Capybara matcher for testing
-HTML text value explicitly.
+HTML text value )itly.
 
 After adding this test, if we run our test suite, we'll see:
 
